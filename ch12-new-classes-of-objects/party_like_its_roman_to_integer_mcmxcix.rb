@@ -11,7 +11,7 @@ def roman_to_integer roman
                 'm' => 1000}
 
   total = 0       # starting value
-  prev = 0        # I don't know what this is suppose to do
+  prev = 0
   index = roman.length - 1 # to refer to the specific letter later
 
   while index >= 0
@@ -25,7 +25,7 @@ def roman_to_integer roman
     end
 
 # think of 'mcmxcix' as an example
-    if val < prev       # I don't get this code at all seems like there's no increment for the prev value that means val < prev will always hold since prev = 0 and val = 1, 5, ... , 1000.
+    if val < prev        # x is 10 which means 10 < 0. This is so smart!
       val = val * -1
     else
       prev = val
