@@ -8,7 +8,7 @@ def shuffle arr
     new_arr = []
 
     arr.each do |check|
-      if curr_index == rand_index
+      if curr_index == rand_index   # it seems we can refer to each individual array by its number when we do the do method and end
         shuffled.push check
       else
         new_arr.push check
